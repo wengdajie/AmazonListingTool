@@ -6,12 +6,12 @@
 
 ## 下载
 
-[下载 Windows EXE](https://github.com/wengdajie/AmazonListingTool/releases/download/v1.2.0-preview.20261029/AmazonListingTool.exe) · [版本发布页](https://github.com/wengdajie/AmazonListingTool/releases/tag/v1.2.0-preview.20261029)
+[下载 Windows EXE](https://github.com/wengdajie/AmazonListingTool/releases/download/v1.3.0/AmazonListingTool.exe) · [版本发布页](https://github.com/wengdajie/AmazonListingTool/releases/tag/v1.3.0)
 
-- 版本：1.2.0 Preview，构建日期 2026-10-29。
-- 当前为内部测试构建，使用 PyArmor 试用工具链，暂不用于商业发行。授权验证仍需有效卡密；公开下载不等于免费或永久授权。
+- 版本：1.3.0，构建日期 2026-10-29。
+- 1.3.0 正式版使用原生编译的授权模块，不包含 PyArmor 试用运行时。授权验证仍需有效卡密；公开下载不等于免费或永久授权。
 - 适用于 Windows 桌面环境；使用内置 WebView，需要 Microsoft Edge WebView2 Runtime。
-- EXE SHA-256：`E300F5DE40BB245E080B6E657CAE976A1697BBE49B9D0083F38F450F25839AAC`。
+- EXE SHA-256：`AF26BC52926EB1E32C5A803DB4237B96979D830623B71113CB3D4E4F168AE978`。
 
 ## 快速开始
 
@@ -34,7 +34,7 @@
 - 默认中转在线模型目录同步，支持多种 AI 服务商。
 - R2/S3 兼容、七牛及妙手图片空间配置。
 - 卡密 RSA v2 验签、本地 DPAPI 缓存、自助解绑换机。
-- 自定义服务按需输入；GitHub 检查、校验下载、安装与重启。
+- 内置服务隐藏 API 地址，自定义服务按需输入；GitHub 检查、校验下载、安装与重启。
 
 ## 界面截图
 
@@ -61,3 +61,17 @@
 可通过 GitHub Issues 报告问题。请说明版本、操作步骤和错误提示；截图前遮盖卡密、API Key、Cookie、图床密钥与业务数据。
 
 本工具为第三方工具，与 Amazon 官方无隶属关系。类目规则和条件必填以目标站点的最新模板及 Seller Central 处理结果为准。
+
+
+## 1.3.0 改进
+
+- 顶部六步流程导航；设置改为 AI 与文案、图片空间、版本与更新三组，支持键盘切换及焦点恢复。
+- 设置保存状态可见；API Key、图床密钥与 Cookie 不再以明文保留在浏览器缓存，保存功能由后端 DPAPI 处理。
+- 默认仅绑定本机地址，拒绝外部来源和非法 Host 请求。
+- 更新器区分正式/预览渠道，当前正式版不会被重复推荐，失败检查会撤销旧候选版本。
+- R2 上传按钮显示正确；导出校验失败释放工作簿，导出文件名精确到微秒。
+- 授权模块使用原生扩展编译，包内含第三方许可说明；不包含源码或 PyArmor 试用运行时。
+
+![版本与更新](docs/screenshots/05-updates.png)
+
+![图片空间](docs/screenshots/06-storage.png)
