@@ -6,12 +6,12 @@
 
 ## 下载
 
-[下载 Windows EXE](https://github.com/wengdajie/AmazonListingTool/releases/download/v1.1.0-preview.20261029/AmazonListingTool.exe) · [版本发布页](https://github.com/wengdajie/AmazonListingTool/releases/tag/v1.1.0-preview.20261029)
+[下载 Windows EXE](https://github.com/wengdajie/AmazonListingTool/releases/download/v1.2.0-preview.20261029/AmazonListingTool.exe) · [版本发布页](https://github.com/wengdajie/AmazonListingTool/releases/tag/v1.2.0-preview.20261029)
 
-- 版本：1.1.0 Preview，构建日期 2026-10-29。
+- 版本：1.2.0 Preview，构建日期 2026-10-29。
 - 当前为内部测试构建，使用 PyArmor 试用工具链，暂不用于商业发行。授权验证仍需有效卡密；公开下载不等于免费或永久授权。
 - 适用于 Windows 桌面环境；使用内置 WebView，需要 Microsoft Edge WebView2 Runtime。
-- EXE SHA-256：`8BACF224DA6DFC70B1FC1C03D09F28B73C314A8B4071D19C318AA314B9295985`。
+- EXE SHA-256：`E300F5DE40BB245E080B6E657CAE976A1697BBE49B9D0083F38F450F25839AAC`。
 
 ## 快速开始
 
@@ -31,9 +31,10 @@
 - POD 按 SKU 批量扫描图片、分析主图和管理文案。
 - 读取模板字段、必填提示、下拉选项，配置父子变体。
 - 导出前检查标题长度、搜索词 UTF-8 字节、SKU、父 SKU 和变体属性。
-- GrsAI 官网模型目录同步，支持多种 AI 服务商。
+- 默认中转在线模型目录同步，支持多种 AI 服务商。
 - R2/S3 兼容、七牛及妙手图片空间配置。
 - 卡密 RSA v2 验签、本地 DPAPI 缓存、自助解绑换机。
+- 内置服务隐藏 API 地址，自定义服务按需输入；GitHub 检查、校验下载、安装与重启。
 
 ## 界面截图
 
